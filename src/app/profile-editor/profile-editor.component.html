@@ -1,0 +1,48 @@
+<!-- <hr class="mt-5" /> -->
+
+<form class="row my-5" [formGroup]="profileForm" (ngSubmit)="OnSubmit()">
+    
+    <!-- Personal form -->
+    <div class="col p-5 bg-dark text-white">
+        <h2><u>Requester</u></h2>
+
+        <!-- First name -->
+        <div class="form-group">
+            <label for="first-name">Name:</label>
+            <input class="form-control my-3" id="first-name" type="text" formControlName="firstName">
+        </div>
+
+        <!-- Second name -->
+        <div class="form-group">
+            <label for="last-name">Email: </label>
+            <input id="last-name" class="form-control my-3" type="text" formControlName="lastName">
+        </div>
+        
+        <!-- Submit -->
+        <p class="form-text" style="color: white;">Complete the form to enable to button</p>
+        <div class="col mt-5">
+            <button type="submit"
+            [disabled]="!profileForm.valid" class="btn btn-light">Submit</button>
+        </div>
+
+    </div>
+
+    <!-- Address form -->
+    <div class="col p-5">
+        <h2><u>Query</u></h2>
+
+        <div class="form-group">
+            <label for="subject">Subject:</label>
+            <input class="form-control my-3" type="text" formControlName="subject">
+
+        </div>
+        
+        <!-- street -->
+        <div class="form-group">
+            <label for="street">Description: </label>
+            <textarea class="form-control my-3" id="street" type="text" formControlName="street" ></textarea>
+        </div>
+     
+    </div>
+
+</form>

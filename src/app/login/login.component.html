@@ -1,0 +1,29 @@
+
+<!-- Personal form -->
+<form class="col-lg-4 p-5 mx-auto my-5" [formGroup]="loginDetails">
+    <h2><u>Login</u></h2>
+
+    <!-- First name -->
+    <div class="form-group">
+        <label for="first-name">Email:</label>
+        <input class="form-control" id="first-name" placeholder="mail of the electric" formControlName="email" type="text" 
+            required 
+            minlength="4">
+    </div>
+
+    <!-- Second name -->
+    <div class="form-group">
+        <label for="last-name">Password: </label>
+        <input id="last-name" class="form-control" placeholder="secrets" formControlName="password" type="password">
+    </div>
+    
+    <!-- Error message -->
+    <span class="text-danger" *ngIf="error">{{error}}</span>
+
+    <!-- Submit -->
+    <p class="form-text" style="color: white;">Please fill in the * fields</p>
+    <div clas="form-group">
+        <button type="submit" (click)="OnSubmit()" class="btn btn-dark">Submit</button>
+    </div>
+
+</form>

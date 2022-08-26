@@ -1,0 +1,72 @@
+
+<!--
+    TO DO:
+    
+    - Read from database/git repository and display the readme.txt and other details (ng-repeat directive for reading the database)
+    - Use appropiate bootstrap to make the carousal look neat and sharp
+    - Decide if the cards will have another model for when it it hovered over or pressed on, or to navigate to another page
+    - Use some animations for when hovering over the cards in the carousal
+    - Should the carousal continue with the content being hidden and showed only when scrolled across?
+
+-->
+
+
+<div class="row">
+    <div class="col">
+        <div class="card text-center" (click)="cardClicked()" [@cardFlip]="data.state">
+            
+            <!-- Image should be here -->
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="100 " height="100" fill="currentColor" class="bi bi-award-fill mx-auto my-5" viewBox="0 0 16 16">
+                <path d="m8 0 1.669.864 1.858.282.842 1.68 1.337 1.32L13.4 6l.306 1.854-1.337 1.32-.842 1.68-1.858.282L8 12l-1.669-.864-1.858-.282-.842-1.68-1.337-1.32L2.6 6l-.306-1.854 1.337-1.32.842-1.68L6.331.864 8 0z"/>
+                <path d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1 4 11.794z"/>
+              </svg>
+
+            <div class="card-body">
+                <h5 class="card-title ">Angular project</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-dark">Explore more</a>
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="col">
+  
+        <div class="card text-center" (click)="cardClicked()" [@cardFlip]="data.state">
+
+            <!-- Image should be here -->
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="100 " height="100" fill="currentColor" class="bi bi-award-fill mx-auto my-5" viewBox="0 0 16 16">
+                <path d="m8 0 1.669.864 1.858.282.842 1.68 1.337 1.32L13.4 6l.306 1.854-1.337 1.32-.842 1.68-1.858.282L8 12l-1.669-.864-1.858-.282-.842-1.68-1.337-1.32L2.6 6l-.306-1.854 1.337-1.32.842-1.68L6.331.864 8 0z"/>
+                <path d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1 4 11.794z"/>
+              </svg>
+
+            <div class="card-body">
+            <h5 class="card-title">Hangfire</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-dark">Explore more</a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="col">
+  
+        <div class="card text-center" (click)="cardClicked()" [@cardFlip]="data.state">
+
+            <!-- Image should be here -->
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="100 " height="100" fill="currentColor" class="bi bi-award-fill mx-auto my-5" viewBox="0 0 16 16">
+                <path d="m8 0 1.669.864 1.858.282.842 1.68 1.337 1.32L13.4 6l.306 1.854-1.337 1.32-.842 1.68-1.858.282L8 12l-1.669-.864-1.858-.282-.842-1.68-1.337-1.32L2.6 6l-.306-1.854 1.337-1.32.842-1.68L6.331.864 8 0z"/>
+                <path d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1 4 11.794z"/>
+              </svg>
+
+            <div class="card-body">
+            <h5 class="card-title">Discord bot</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-dark">Explore more</a>
+            </div>
+        </div>
+    </div>
+</div>
